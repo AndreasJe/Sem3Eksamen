@@ -6,102 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>This is a test</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
-
-  <style media="screen">
-    body {
-      background-color: #F3E6CA;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar {
-      height: 5vh;
-      padding-bottom: 1vh;
-      background-color: #AF8167;
-    }
-
-    .navlink {
-
-      color: #9E9382 !important;
-    }
-
-    .content {
-      width: 100vw;
-      margin: auto;
-      background-color: #EFD7C2;
-    }
-
-    header {
-      position: relative;
-      background-color: black;
-      height: 95vh;
-      min-height: 25rem;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    header video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: 0;
-      -ms-transform: translateX(-50%) translateY(-50%);
-      -moz-transform: translateX(-50%) translateY(-50%);
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
-    }
-
-    header .container {
-      position: relative;
-      z-index: 2;
-    }
-
-    header .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: black;
-      opacity: 0.5;
-      z-index: 1;
-    }
-
-    .kolonne {
-      scroll-snap-align: center;
-      height: 100vh;
-      padding: 5vw;
-    }
-
-    .kolonne img {
-      height: 50vh;
-    }
-
-    .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 1rem;
-      padding-left: 1rem;
-    }
-
-    .cover {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-
-    @media (pointer: coarse) and (hover: none) {
-      header {
-        background: url('https://i.vimeocdn.com/video/795032897.webp?mw=1700&mh=896') black no-repeat center center scroll;
-      }
-
-      header video {
-        display: none;
-      }
-    }
-  </style>
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -152,7 +57,9 @@
       </div>
     </div>
   </nav>
-  <main class="content">
+
+
+  <div class="content justify-content-center ">
 
 
 
@@ -161,25 +68,27 @@
 
     <div class="row justify-content-center kolonne">
       <div class="col-12 col-md-6 col-lg-6 align-self-center">
+        <h2>Hvor får vi alt det træ fra?</h2>
 
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
           et.
           Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
-          et.
+          et.</p>
       </div>
       <div class="col-12 col-md-6 align-self-center col-lg-6">
-        <img class="img-fluid cover" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
+        <img class="img cover" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
       </div>
     </div>
     <div class="row justify-content-center  kolonne">
       <div class="col-12 col-md-6 col-lg-6 order-md-3 align-self-center">
+        <h2>Hvordan laves legetøjet?</h2>
 
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
           et.
           Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
-          et.
+          et.</p>
       </div>
       <div class="col-12 col-md-6 col-lg-6 align-self-center order-md-1">
         <img class="img-fluid cover" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
@@ -187,70 +96,144 @@
     </div>
     <div class="row justify-content-center  kolonne">
       <div class="col-12 col-md-6 col-lg-6 align-self-center">
+        <h2>Hvor får vi alt det træ fra?</h2>
 
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
           et.
           Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
-          et.
+          et.</p>
       </div>
       <div class="col-12 col-md-6 col-lg-6 align-self-center">
         <img class="img-fluid cover" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
       </div>
     </div>
 
-  </main>
+    <div class="container-fluid">
+      <div class="container">
+        <h2>Hvem er vi?</h2>
+        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+          et.</p>
+      </div>
+    </div>
+
+    <div class="container-fluid profiles">
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-4 ">
+          <img src="assets/temp.webp" class="rounded mx-auto d-block" alt="">
+          <h3>Benny Larsen</h3>
+          <em>Borgmester</em>
+          <p>Vestibulum tristique malesuada urna, non blandit dolor porttitor et. </p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-4">
+          <img src="assets/temp.webp" class="rounded mx-auto d-block" alt="">
+          <h3>Benny Larsen</h3>
+          <em>Borgmester</em>
+          <p>Vestibulum tristique malesuada urna, non blandit dolor porttitor et. </p>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-4">
+          <img src="assets/temp.webp" class="rounded mx-auto d-block" alt="">
+          <h3>Benny Larsen</h3>
+          <em>Borgmester</em>
+          <p>Vestibulum tristique malesuada urna, non blandit dolor porttitor et. </p>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-4">
+          <img src="assets/temp.webp" class="rounded mx-auto d-block" alt="">
+          <h3>Benny Larsen</h3>
+          <em>Borgmester</em>
+          <p>Vestibulum tristique malesuada urna, non blandit dolor porttitor et. </p>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-4">
+          <img src="assets/temp.webp" class="rounded mx-auto d-block" alt="">
+          <h3>Benny Larsen</h3>
+          <em>Borgmester</em>
+          <p>Vestibulum tristique malesuada urna, non blandit dolor porttitor et. </p>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-4">
+          <img src="assets/temp.webp" class="rounded mx-auto d-block" alt="">
+          <h3>Benny Larsen</h3>
+          <em>Borgmester</em>
+          <p>Vestibulum tristique malesuada urna, non blandit dolor porttitor et. </p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row justify-content-center  kolonne">
+        <div class="col-12 col-md-6 col-lg-6 align-self-center">
+          <h2>Hvor får vi alt det træ fra?</h2>
+
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.
+            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 align-self-center">
+          <img class="img-fluid cover" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
+        </div>
+      </div>
+      <div class="row justify-content-center  kolonne">
+        <div class="col-12 col-md-6 col-lg-6 order-md-2  align-self-center">
+          <h2>Hvordan laves legetøjet?</h2>
+
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.
+            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 align-self-center order-md-1">
+          <img class="img-fluid cover" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
+        </div>
+      </div>
+
+    </div>
 
 
-  <!--
-  <script>
-    document.addEventListener("DOMContentLoaded", start)
+    <div class="container-fluid">
 
+      <div class="container d-flex flex-row justify-content-center p-5">
+        <h1 style="padding-top:2rem;">Contact us!</h1>
+        <svg width="6em" height="6em" viewBox="0 0 16 16" class="bi bi-chat-text-fill" style="padding-bottom:3rem;" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+        </svg>
+      </div>
 
-    let forside
-    let genereltIndhold
+    </div>
 
-    let url1 = "https://adam.duedrengen.dk/wp-json/wp/v2/forside/792";
-    let url2 = "https://adam.duedrengen.dk/wp-json/wp/v2/generelt/751";
+  </div>
 
-    async function start() {
-      let response1 = await fetch(url1);
-      let response2 = await fetch(url2);
+  <div class="container-fluid footer">
 
-      forside = await response1.json();
-      genereltIndhold = await response2.json();
+    <div class="row">
+      <div class="col-12 col-md-4 col-lg-4 align-self-start">
+        <p>Webshop</p>
+        <p>Nye Produkter</p>
+        <p>Kampagne</p>
 
-      visForside();
-      visGenereltIndhold();
-    }
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 align-self-center">
+        <p>Penisvej 12</p>
+        <p>2200 København</p>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 align-self-start">
+        <p>Privatpolienis</p>
+        <p>Handelsbetingelser</p>
+        <p>Cookies og data</p>
 
+      </div>
 
-    function visForside() {
-      console.log("Henter forside indhold...")
-      document.querySelector(".bg_img").src = forside.baggrundsbillede.guid;
-      document.querySelector(".bg_video").src = forside.video.guid;
-      document.querySelector(".overskrift").textContent = forside.overskrift;
-      document.querySelector(".broedtekst").innerHTML = forside.tekst;
-
-    }
-
-
-
-    function visGenereltIndhold() {
-      console.log("Henter generelt indhold...")
-      document.querySelector(".logo_img").src = genereltIndhold.logo_forside.guid;
-      document.querySelector(".btm_logo_img").src = genereltIndhold.logo.guid;
-      document.querySelector(".adresse").textContent = genereltIndhold.adresse;
-      document.querySelector(".email").textContent = genereltIndhold.email;
-      document.querySelector(".telefon").textContent = genereltIndhold.tlf;
-      document.querySelector(".navn").textContent = genereltIndhold.navn;
-      document.querySelector(".facebook_ikon").src = genereltIndhold.facebook.guid;
-      document.querySelector(".instagram_ikon").src = genereltIndhold.instagram.guid;
-      document.querySelector(".pynt1").src = genereltIndhold.pyntforside1.guid;
-      document.querySelector(".scroll-indikator").src = genereltIndhold.scroll.guid;
-    }
-  </script> -->
-
+    </div>
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
