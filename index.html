@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>This is a test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+
+  <style media="screen">
+    .navbar {
+      height: 5vh;
+      padding-bottom: 1vh;
+      background-color: #FDCBA9;
+    }
+
+    .navlink {
+
+      color: #9E9382 !important;
+    }
+
+    .content {
+      width: 80vw;
+      margin: auto;
+    }
+
+    header {
+      position: relative;
+      background-color: black;
+      height: 95vh;
+      min-height: 25rem;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    header .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.5;
+      z-index: 1;
+    }
+
+    .kolonne {
+      height: 100vh;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+    }
+
+    .kolonne img {
+      height: 50vh;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    @media (pointer: coarse) and (hover: none) {
+      header {
+        background: url('https://i.vimeocdn.com/video/795032897.webp?mw=1700&mh=896') black no-repeat center center scroll;
+      }
+
+      header video {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="assets/pige.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Økologisk Legetøj</h1>
+          <p class="lead mb-0">Altid det bedste til de små</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sticky-top navbar navbar-expand-lg navbar-dark" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="content">
+    <div id="historie">
+      <div class="row justify-content-center kolonne">
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.
+            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <img class="img-fluid" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
+        </div>
+      </div>
+      <div class="row justify-content-center kolonne">
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.
+            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <img class="img-fluid" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
+        </div>
+      </div>
+      <div class="row justify-content-center kolonne">
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.
+            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+            et.
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <img class="img-fluid" src="https://images.unsplash.com/photo-1564462670440-725c000bcfe1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="træ">
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <!--
+  <script>
+    document.addEventListener("DOMContentLoaded", start)
+
+
+    let forside
+    let genereltIndhold
+
+    let url1 = "https://adam.duedrengen.dk/wp-json/wp/v2/forside/792";
+    let url2 = "https://adam.duedrengen.dk/wp-json/wp/v2/generelt/751";
+
+    async function start() {
+      let response1 = await fetch(url1);
+      let response2 = await fetch(url2);
+
+      forside = await response1.json();
+      genereltIndhold = await response2.json();
+
+      visForside();
+      visGenereltIndhold();
+    }
+
+
+    function visForside() {
+      console.log("Henter forside indhold...")
+      document.querySelector(".bg_img").src = forside.baggrundsbillede.guid;
+      document.querySelector(".bg_video").src = forside.video.guid;
+      document.querySelector(".overskrift").textContent = forside.overskrift;
+      document.querySelector(".broedtekst").innerHTML = forside.tekst;
+
+    }
+
+
+
+    function visGenereltIndhold() {
+      console.log("Henter generelt indhold...")
+      document.querySelector(".logo_img").src = genereltIndhold.logo_forside.guid;
+      document.querySelector(".btm_logo_img").src = genereltIndhold.logo.guid;
+      document.querySelector(".adresse").textContent = genereltIndhold.adresse;
+      document.querySelector(".email").textContent = genereltIndhold.email;
+      document.querySelector(".telefon").textContent = genereltIndhold.tlf;
+      document.querySelector(".navn").textContent = genereltIndhold.navn;
+      document.querySelector(".facebook_ikon").src = genereltIndhold.facebook.guid;
+      document.querySelector(".instagram_ikon").src = genereltIndhold.instagram.guid;
+      document.querySelector(".pynt1").src = genereltIndhold.pyntforside1.guid;
+      document.querySelector(".scroll-indikator").src = genereltIndhold.scroll.guid;
+    }
+  </script> -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
