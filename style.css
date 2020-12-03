@@ -1,22 +1,111 @@
+@import url("https://p.typekit.net/p.css?s=1&k=zia3kjo&ht=tk&f=4619.4620&a=31421516&app=typekit&e=css");
+
+@font-face {
+  font-family: "ff-providence-sans-web-pro";
+  src: url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ccmeanwhile";
+  src: url("https://use.typekit.net/af/f110aa/00000000000000003b9b47fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/f110aa/00000000000000003b9b47fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/f110aa/00000000000000003b9b47fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ode";
+  src: url("https://use.typekit.net/af/5705c4/00000000000000003b9b3c64/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/5705c4/00000000000000003b9b3c64/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/5705c4/00000000000000003b9b3c64/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.tk-ff-providence-sans-web-pro {
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+}
+
+p {
+  font-family: "ode";
+  font-size: 1rem;
+}
+
+.kolonne p {
+  padding: 5%;
+}
+
+.profiles p {
+  font-size: 0.8rem;
+}
+
+.profiles em {
+  font-family: "ff-providence-sans-web-pro";
+  font-size: 0.8rem;
+}
+
+h1, h2, a {
+  font-family: "ff-providence-sans-web-pro";
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  font-size: 1.6rem;
+  padding: 2%;
+}
+
+h3 {
+  font-family: "ff-providence-sans-web-pro";
+  font-weight: 700;
+  line-height: 0.6;
+  letter-spacing: -2px;
+  font-size: 2rem;
+}
+
 body,
 html {
+  color: white;
   background-color: #F3E6CA;
   margin: 0;
   padding: 0;
 }
 
-.navbar {
-  height: 5vh;
+nav {
+  min-height: 6vh;
+  line-height: 1.5;
   padding-bottom: 1vh;
-  background-color: #AF8167;
+  background-color: #AF8167 !important;
 }
 
-.navlink {
-  color: #9E9382 !important;
+.nav-item {
+  padding-top: 1vh !important;
+  padding-bottom: 1vh !important;
+  color: #EFD7C2 !important;
+  font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-toggler {
+  border-style: none;
+}
+
+.logo {
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  left: 50vw;
+  width: 50vw;
+  height: 50vw;
+  bottom: -7.1%;
+  z-index: 1088;
+  margin-left: -25vw;
+}
+
+.logo-spacer {
+  width: 4vw;
 }
 
 .content {
-  width: 95%;
+  width: 100%;
   margin: auto;
   background-color: #EFD7C2;
 }
@@ -24,7 +113,7 @@ html {
 header {
   position: relative;
   background-color: black;
-  height: 95vh;
+  height: 92vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -65,6 +154,7 @@ header .overlay {
   height: 100%;
   padding: 5vw;
   width: 100%;
+  overflow: hidden;
 }
 
 .kolonne img {
@@ -88,7 +178,8 @@ header .overlay {
 }
 
 .profiles .col-6 {
-  padding: 10%;
+  padding: 7%;
+  height: 100%;
 }
 
 .profiles h3,
@@ -97,21 +188,46 @@ header .overlay {
 .profiles {
   width: 100%;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .footer {
   text-align: center;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
 }
 
 .footer .col-12 {
   padding: 2.5%;
 }
 
+.floating {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.swim {
+  transform: translateX(1500px);
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 2px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
 @media only screen and (min-width: 576px) {
+  p {
+    font-size: 1.2rem;
+  }
+
   .kolonne {
     height: 100vh;
   }
@@ -119,9 +235,34 @@ header .overlay {
   .kolonne img {
     height: 100%;
   }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+
+    50% {
+      transform: translate(0, 5px);
+    }
+
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    bottom: -9.2%;
+    width: 40vw;
+    height: 40vw;
+    margin-left: -20vw;
+  }
+
   .kolonne {
     height: 75vh;
   }
@@ -133,25 +274,84 @@ header .overlay {
   .profiles .col-6 {
     padding: 5%;
   }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+
+    50% {
+      transform: translate(0, 5px);
+    }
+
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  .floating {
+    animation-name: floating;
+    animation-duration: 3s;
+  }
+
   .kolonne {
     height: 100vh;
   }
 
   .kolonne img {
     height: 50%;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+
+    50% {
+      transform: translate(0, 15px);
+    }
+
+    100% {
+      transform: translate(0, -0px);
+    }
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  .floating {
+    animation-name: floating;
+    animation-duration: 4s;
+  }
+
+  .logo {
+    bottom: -10.2%;
+    width: 20vw;
+    height: 20vw;
+    margin-left: -10vw;
+  }
+
   .kolonne {
     height: 100vh;
   }
 
   .kolonne img {
     height: 50%;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+
+    50% {
+      transform: translate(0, 10px);
+    }
+
+    100% {
+      transform: translate(0, -0px);
+    }
   }
 }
 
