@@ -65,39 +65,65 @@ h3 {
 
 body,
 html {
-  color: white;
+  color: #E1E2DC;
   background-color: #F3E6CA;
   margin: 0;
   padding: 0;
 }
 
 nav {
-  min-height: 6vh;
+  min-height: 10vh;
   line-height: 1.5;
   padding-bottom: 1vh;
-  background-color: #AF8167 !important;
+  background-color: #52768E !important;
 }
 
 .nav-item {
   padding-top: 1vh !important;
   padding-bottom: 1vh !important;
-  color: #EFD7C2 !important;
+  color: #E1E2DC !important;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .navbar-dark .navbar-toggler {
   border-style: none;
 }
 
-.logo {
+#svane1 {
   transition: transform 0.5s ease-in-out;
   position: absolute;
-  left: 50vw;
+  left: 125vw;
   width: 50vw;
   height: 50vw;
-  bottom: -7.1%;
+  bottom: -4.1%;
+  z-index: 1188;
+  margin-left: -25vw;
+  animation: slide 50s linear infinite;
+  -webkit-backface-visibility: hidden;
+}
+
+#svane2 {
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  left: 125vw;
+  width: 50vw;
+  height: 50vw;
+  bottom: -5.2%;
   z-index: 1088;
   margin-left: -25vw;
+  animation: slide 40s linear infinite;
+  -webkit-backface-visibility: hidden;
+}
+
+.logo {
+  padding: 10px 10px 0 10px;
+}
+
+.name {
+  font-size: 14px;
+  color: #333;
+  padding-top: 15px;
 }
 
 .logo-spacer {
@@ -105,15 +131,16 @@ nav {
 }
 
 .content {
-  width: 100%;
-  margin: auto;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
   background-color: #EFD7C2;
 }
 
 header {
   position: relative;
   background-color: black;
-  height: 92vh;
+  height: 90vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -153,8 +180,16 @@ header .overlay {
 .kolonne {
   height: 100%;
   padding: 5vw;
+  margin: 0;
   width: 100%;
   overflow: hidden;
+  background-color: #E1E2DC;
+  color: #737B51;
+}
+
+.kolonne:nth-child(even) {
+  background-color: #737B51;
+  color: #E1E2DC;
 }
 
 .kolonne img {
@@ -172,14 +207,28 @@ header .overlay {
   height: 100%;
 }
 
+.staff-intro {
+  background-color: #8AA1AF;
+}
+
+.rounded {
+  border-radius: 6.25rem !important;
+}
+
 .profiles img {
   height: 100px;
   width: 100px;
 }
 
 .profiles .col-6 {
+  background-color: #D5D6D0;
   padding: 7%;
   height: 100%;
+  color: #737B51;
+}
+
+.profiles .col-6:nth-child(odd) {
+  background-color: #E1E2DC;
 }
 
 .profiles h3,
@@ -190,8 +239,21 @@ header .overlay {
   text-align: center;
 }
 
+.prof-bg1 {
+  background-color: #D5D6D0 !important;
+}
+
+.prof-bg2 {
+  background-color: #e1e2dc !important;
+}
+
+.contact {
+  background-color: #52768E;
+}
+
 .footer {
   text-align: center;
+  background-color: #8AA1AF;
 }
 
 .footer .col-12 {
@@ -209,6 +271,10 @@ header .overlay {
   transform: translateX(1500px);
 }
 
+.logo-spacer {
+  display: none;
+}
+
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -220,6 +286,16 @@ header .overlay {
 
   100% {
     transform: translate(0, -0px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-692px, 0, 0);
   }
 }
 
@@ -249,6 +325,18 @@ header .overlay {
       transform: translate(0, -0px);
     }
   }
+
+  .logo-spacer {
+    display: none;
+  }
+
+  #svane1 {
+    bottom: -7.1%;
+  }
+
+  #svane2 {
+    bottom: -9.2%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -275,6 +363,14 @@ header .overlay {
     padding: 5%;
   }
 
+  .prof-bg1 {
+    background-color: #e1e2dc !important;
+  }
+
+  .prof-bg2 {
+    background-color: #D5D6D0 !important;
+  }
+
   @keyframes floating {
     0% {
       transform: translate(0, 0px);
@@ -287,6 +383,10 @@ header .overlay {
     100% {
       transform: translate(0, -0px);
     }
+  }
+
+  .logo-spacer {
+    display: none;
   }
 }
 
@@ -301,7 +401,7 @@ header .overlay {
   }
 
   .kolonne img {
-    height: 50%;
+    height: 50vh;
   }
 
   @keyframes floating {
@@ -316,6 +416,10 @@ header .overlay {
     100% {
       transform: translate(0, -0px);
     }
+  }
+
+  .logo-spacer {
+    display: block;
   }
 }
 
@@ -337,7 +441,11 @@ header .overlay {
   }
 
   .kolonne img {
-    height: 50%;
+    height: 50vh;
+  }
+
+  .logo-spacer {
+    display: block;
   }
 
   @keyframes floating {
