@@ -335,7 +335,7 @@ header .overlay {
   }
 
   #svane2 {
-    bottom: -9.2%;
+    bottom: -8.2%;
   }
 }
 
@@ -344,11 +344,20 @@ header .overlay {
     font-size: 1.3rem;
   }
 
-  .logo {
-    bottom: -9.2%;
+  #svane1 {
+    bottom: -5.5%;
     width: 40vw;
     height: 40vw;
     margin-left: -20vw;
+    animation: slide 50s linear infinite;
+  }
+
+  #svane2 {
+    bottom: -8.2%;
+    width: 40vw;
+    height: 40vw;
+    margin-left: -20vw;
+    animation: slide 40s linear infinite;
   }
 
   .kolonne {
@@ -369,6 +378,16 @@ header .overlay {
 
   .prof-bg2 {
     background-color: #D5D6D0 !important;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-852px, 0, 0);
+    }
   }
 
   @keyframes floating {
@@ -421,6 +440,16 @@ header .overlay {
   .logo-spacer {
     display: block;
   }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-1002px, 0, 0);
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -429,11 +458,22 @@ header .overlay {
     animation-duration: 4s;
   }
 
-  .logo {
-    bottom: -10.2%;
+  #svane1 {
+    bottom: -7.2%;
+    left: 114vw;
     width: 20vw;
     height: 20vw;
     margin-left: -10vw;
+    animation: slide 45s linear infinite;
+  }
+
+  #svane2 {
+    bottom: -10.2%;
+    left: 110vw;
+    width: 20vw;
+    height: 20vw;
+    margin-left: -10vw;
+    animation: slide 40s linear infinite;
   }
 
   .kolonne {
@@ -459,6 +499,43 @@ header .overlay {
 
     100% {
       transform: translate(0, -0px);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-2502px, 0, 0);
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  #svane1 {
+    bottom: -4.2%;
+    left: 114vw;
+    width: 15vw;
+    height: 15vw;
+    margin-left: -10vw;
+  }
+
+  #svane2 {
+    bottom: -6.2%;
+    width: 15vw;
+    height: 15vw;
+    margin-left: -10vw;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-3502px, 0, 0);
     }
   }
 }
