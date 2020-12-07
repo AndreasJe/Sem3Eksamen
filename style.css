@@ -73,13 +73,24 @@ html {
   color: #E1E2DC;
   margin: 0;
   padding: 0;
+  background-color: #afc9d2 !important;
 }
 
 nav {
-  min-height: 4vh;
+  min-height: 2vh;
   line-height: 1.5;
   padding-bottom: 1vh;
   background-color: #87B6C6 !important;
+  z-index: 100000000;
+}
+
+.nav-container {
+  min-height: 12vh;
+}
+
+#navbarsExample08 {
+  min-height: 2vh;
+  z-index: 100000000;
 }
 
 .nav-item {
@@ -95,24 +106,22 @@ nav {
 }
 
 #svane1 {
-  transition: transform 0.5s ease-in-out;
   position: absolute;
-  left: 125vw;
-  width: 50vw;
-  height: 50vw;
-  bottom: -4.1%;
-  z-index: 1188;
+  left: 70vw;
+  width: 20vw;
+  height: 20vw;
+  bottom: -22.1%;
+  z-index: 1;
   margin-left: -25vw;
 }
 
 #svane2 {
-  transition: transform 0.5s ease-in-out;
   position: absolute;
-  left: 125vw;
-  width: 50vw;
-  height: 50vw;
-  bottom: -5.2%;
-  z-index: 1088;
+  left: 64vw;
+  width: 23vw;
+  height: 23vw;
+  bottom: -41.2%;
+  z-index: 0;
   margin-left: -25vw;
 }
 
@@ -134,7 +143,8 @@ nav {
   width: 100vw;
   padding: 0;
   margin: 0;
-  background-color: #737B51;
+  background-color: #AFC9D2;
+  ;
 }
 
 .hero {
@@ -177,10 +187,17 @@ nav {
   z-index: 1;
 }
 
+.nav-container {
+  margin: 0;
+  padding: 0;
+}
+
 .topbar, .topbar .row {
   margin: 0;
   padding: 0;
+  height: 9vh;
   background-color: #AFC9D2;
+  position: relative;
 }
 
 .topbar .logotekst img {
@@ -200,10 +217,22 @@ nav {
   margin-right: 0;
 }
 
+.dropdown-menu {
+  background-color: rgb(33 37 41 / 4%);
+  border: 0;
+}
+
+.dropdown-menu a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
 header {
   position: relative;
   background-color: black;
-  height: 90vh;
+  height: 86vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -290,7 +319,14 @@ header .overlay {
 }
 
 .profiles .col-6 {
-  background-color: #D5D6D0;
+  background-color: #8AA1AF;
+  padding: 7%;
+  height: 100%;
+  color: #737B51;
+}
+
+.showcase .col-12 {
+  background-color: #8AA1AF;
   padding: 7%;
   height: 100%;
   color: #737B51;
@@ -379,6 +415,9 @@ header .overlay {
 
 .banner__item__pic {
   float: right;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
 .banner__item__text {
@@ -473,9 +512,35 @@ header .overlay {
   .logo-spacer {
     display: none;
   }
+
+  #svane1 {
+    position: absolute;
+    left: 68vw;
+    width: auto;
+    height: 10vh;
+    bottom: -12.1%;
+    z-index: 1;
+    margin-left: -25vw;
+  }
+
+  #svane2 {
+    position: absolute;
+    left: 64vw;
+    width: auto;
+    height: 10vh;
+    bottom: -23.2%;
+    z-index: 0;
+    margin-left: -25vw;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  .dropdown-menu {
+    background-color: #87b6c6;
+    border-top: 0;
+    border: 2px solid black;
+  }
+
   .kolonne {
     height: 100vh;
   }
@@ -501,7 +566,7 @@ header .overlay {
     color: #E1E2DC !important;
     font-weight: 700;
     line-height: 46px;
-    letter-spacing: -9px;
+    letter-spacing: -6px;
     margin-bottom: -6px;
   }
 
@@ -579,6 +644,14 @@ header .overlay {
   .banner__item.banner__item--middle {
     margin-top: -275px;
   }
+
+  #svane2 {
+    left: 71vw;
+  }
+
+  #svane1 {
+    left: 73vw;
+  }
 }
 
 @media only screen and (min-width: 2000px) {
@@ -609,6 +682,10 @@ header .overlay {
 
   .banner__item.banner__item--middle {
     margin-top: -275px;
+  }
+
+  #svane1 {
+    left: 72.5vw;
   }
 }
 
