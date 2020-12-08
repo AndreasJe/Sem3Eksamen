@@ -46,13 +46,24 @@ p {
   font-size: 0.8rem;
 }
 
-h1, h2 {
+h1 {
+  font-family: "ff-providence-sans-web-pro";
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  font-size: 2.5rem;
+  padding: 2%;
+  text-align: center;
+}
+
+h2 {
   font-family: "ff-providence-sans-web-pro";
   font-weight: 700;
   line-height: 1;
   letter-spacing: -2px;
   font-size: 1.6rem;
   padding: 2%;
+  text-align: center;
 }
 
 a {
@@ -107,10 +118,10 @@ nav {
 
 #svane1 {
   position: absolute;
-  left: 70vw;
+  left: 71vw;
   width: 20vw;
   height: 20vw;
-  bottom: -22.1%;
+  bottom: -19.1%;
   z-index: 1;
   margin-left: -25vw;
 }
@@ -118,9 +129,9 @@ nav {
 #svane2 {
   position: absolute;
   left: 64vw;
-  width: 23vw;
-  height: 23vw;
-  bottom: -41.2%;
+  width: 25vw;
+  height: 25vw;
+  bottom: -32.2%;
   z-index: 0;
   margin-left: -25vw;
 }
@@ -232,7 +243,7 @@ nav {
 header {
   position: relative;
   background-color: black;
-  height: 86vh;
+  height: 84vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -325,11 +336,62 @@ header .overlay {
   color: #737B51;
 }
 
+.showcase {}
+
+.showcase h3 {
+  margin-top: 20px;
+}
+
 .showcase .col-12 {
-  background-color: #8AA1AF;
   padding: 7%;
+}
+
+.showcase .row {
+  text-align: center;
+}
+
+.showcase img {
+  width: 100%;
   height: 100%;
-  color: #737B51;
+}
+
+.showcase .row .col-12 {
+  padding: 10%;
+  margin-top: 3vh;
+  text-align: center;
+}
+
+.options-container {
+  width: 80%;
+  border-top: none;
+}
+
+.add-cart {
+  padding: 0.5rem;
+  background-color: #D5D6D0;
+  border-left: 0.5rem solid #8AA1AF;
+  border-bottom: 0.5rem solid #8AA1AF;
+}
+
+.product-link {
+  padding: 0.5rem;
+  background-color: #E1E2DC;
+  border-right: 0.5rem solid #8AA1AF;
+  border-bottom: 0.5rem solid #8AA1AF;
+}
+
+.img-container {
+  border: 0.5rem solid #8AA1AF;
+  width: 80%;
+  height: 300px;
+  position: relative;
+  padding: 0;
+}
+
+.img-container h3 {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
 }
 
 .profiles .col-6:nth-child(odd) {
@@ -363,6 +425,7 @@ header .overlay {
 
 .footer .col-12 {
   padding: 2.5%;
+  margin: 5%;
 }
 
 .floating {
@@ -421,7 +484,7 @@ header .overlay {
 }
 
 .banner__item__text {
-  max-width: 300px;
+  max-width: 350px;
   position: absolute;
   right: 0;
   top: 13px;
@@ -466,6 +529,63 @@ header .overlay {
   padding-bottom: 100px;
 }
 
+/*CART Funktion */
+.cd-cart__trigger,
+.cd-cart__content {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  transition: transform .2s;
+}
+
+.cd-cart--empty .cd-cart__trigger,
+.cd-cart--empty .cd-cart__content {
+  // hide cart
+  transform: translateY(150px);
+}
+
+.cd-cart__layout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  overflow: hidden;
+  height: 72px;
+  width: 72px;
+  border-radius: var(--radius);
+  transition: height .4s .1s, width .4s .1s, box-shadow .3s;
+  transition-timing-function: cubic-bezier(.67, .17, .32, .95);
+  background: var(--cd-color-3);
+  box-shadow: 0 4px 30px rgba(#000, .17);
+}
+
+.cd-cart--open .cd-cart__layout {
+  height: 100%;
+  width: 100%;
+  transition-delay: 0s;
+}
+
+.cd-cart__product--deleted {
+  // this class is added to an item when it is removed form the cart
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  animation: cd-item-slide-out .3s forwards;
+}
+
+@keyframes cd-item-slide-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+}
+
 @media only screen and (min-width: 576px) {
   p {
     font-size: 1.2rem;
@@ -489,8 +609,19 @@ header .overlay {
     font-size: 1.3rem;
   }
 
+  .footer .col-12 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .topbar .logotekst img {
+    margin: 0;
+    height: 50px;
+  }
+
   .kolonne {
     height: 75vh;
+    padding: 5vw;
   }
 
   .kolonne img {
@@ -532,6 +663,12 @@ header .overlay {
     z-index: 0;
     margin-left: -25vw;
   }
+
+  .showcase .row .col-12 {
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -543,6 +680,11 @@ header .overlay {
 
   .kolonne {
     height: 100vh;
+  }
+
+  .topbar .logotekst img {
+    margin: 0;
+    height: 70px;
   }
 
   .kolonne img {
