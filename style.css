@@ -69,6 +69,15 @@ h2 {
 a {
   font-family: "ff-providence-sans-web-pro";
   text-decoration: none;
+  color: inherit;
+  opacity: 0.7;
+}
+
+a:hover {
+  color: inherit;
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h3 {
@@ -723,7 +732,6 @@ header .overlay {
   .dropdown-menu {
     background-color: #87b6c6;
     border-top: 0;
-    border: 2px solid black;
   }
 
   .kolonne {
