@@ -333,10 +333,28 @@ header .overlay {
   background-color: #8AA1AF;
   padding: 7%;
   height: 100%;
-  color: #737B51;
+  color: #fff;
 }
 
-.showcase {}
+.myBtnContainer .col {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn img {
+  height: 250px;
+  width: 100%;
+}
+
+.knap h3 {
+  position: absolute;
+  user-select: none;
+  font-size: 2rem;
+  bottom: 5%;
+  left: 10%;
+  right: 10%;
+  color: #fff;
+}
 
 .showcase h3 {
   margin-top: 20px;
@@ -359,6 +377,37 @@ header .overlay {
   padding: 10%;
   margin-top: 3vh;
   text-align: center;
+}
+
+.show {
+  display: block !important;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.filterDIV {
+  display: none;
+  /* Hidden by default */
+}
+
+.hidden {
+  display: none;
+  /* Hidden by default */
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
 
 .options-container {
