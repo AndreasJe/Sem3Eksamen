@@ -344,6 +344,15 @@ header .overlay {
 .btn img {
   height: 250px;
   width: 100%;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.knap img:hover {
+  overflow: none;
+  transform: scale(1.05);
+  transition: 0.1s;
+  opacity: 1;
 }
 
 .knap h3 {
@@ -387,7 +396,6 @@ header .overlay {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
   cursor: pointer;
 }
 
@@ -399,15 +407,6 @@ header .overlay {
 .hidden {
   display: none;
   /* Hidden by default */
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
 }
 
 .options-container {
