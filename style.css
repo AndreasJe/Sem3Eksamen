@@ -265,7 +265,7 @@ nav {
   color: white;
 }
 
-.content nav {
+main nav {
   background-color: inherit !important;
 }
 
@@ -466,7 +466,7 @@ header .overlay {
   padding: 2rem;
   margin-top: 5vh;
   border: 5px solid white;
-  width: 30%;
+  width: 100%;
   text-align: center;
   color: white;
   cursor: pointer;
@@ -705,6 +705,10 @@ header .overlay {
   .pris {
     width: 350px;
   }
+
+  .go-back {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -855,6 +859,10 @@ header .overlay {
   .banner__item.banner__item--middle .banner__item__text {
     top: -120px;
   }
+
+  .go-back {
+    width: 40%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -918,6 +926,10 @@ header .overlay {
   #svane1 {
     left: 73vw;
   }
+
+  .go-back {
+    width: 30%;
+  }
 }
 
 @media only screen and (min-width: 2000px) {
@@ -956,6 +968,10 @@ header .overlay {
 
   #svane1 {
     left: 72.5vw;
+  }
+
+  .go-back {
+    width: 25%;
   }
 }
 
