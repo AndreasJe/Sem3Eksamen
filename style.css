@@ -83,7 +83,6 @@ a:hover {
 h3 {
   font-family: "ff-providence-sans-web-pro";
   font-weight: 700;
-  line-height: 0.6;
   letter-spacing: -2px;
   font-size: 2rem;
 }
@@ -250,6 +249,26 @@ nav {
   padding: 1rem;
 }
 
+.breadcrumb-item+.breadcrumb-item::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
+}
+
+.breadcrumb {
+  background-color: inherit;
+  font-size: 1.2rem;
+  padding-left: 20px;
+  font-family: 'ff-providence-sans-web-pro';
+  color: white;
+}
+
+.breadcrumb .active {
+  color: white;
+}
+
+.content nav {
+  background-color: inherit !important;
+}
+
 header {
   position: relative;
   background-color: black;
@@ -346,7 +365,7 @@ header .overlay {
   color: #fff;
 }
 
-.myBtnContainer .col {
+.myBtnContainer .col-12 {
   position: relative;
   overflow: hidden;
 }
@@ -359,7 +378,7 @@ header .overlay {
 }
 
 .knap img:hover {
-  overflow: none;
+  overflow: hidden;
   transform: scale(1.05);
   transition: 0.1s;
   opacity: 1;
@@ -403,7 +422,6 @@ header .overlay {
 }
 
 .btn {
-  width: 100%;
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -436,9 +454,25 @@ header .overlay {
   padding: 0.5rem;
 }
 
+#products {
+  padding: 5vw;
+}
+
+#categories {
+  padding: 5vw;
+}
+
+.go-back {
+  padding: 2rem;
+  margin-top: 5vh;
+  border: 5px solid white;
+  width: 30%;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
 .img-container {
-  width: 80%;
-  height: 250px;
   position: relative;
   padding: 0;
 }
@@ -448,7 +482,38 @@ header .overlay {
   bottom: 0;
   width: 80%;
   left: 10%;
+}
+
+.produkt, .instruktioner, .kampagne {
+  width: 80%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.produkt h2 {
+  font-size: 2.6rem;
+  font-family: 'ff-providence-sans-web-pro';
+  width: 100%;
+}
+
+.produkt em {
+  font-size: 0.7rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'ff-providence-sans-web-pro';
+}
+
+.kampagne a {
+  font-size: 1.4rem;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+
+.kampagne h2 {
+  font-size: 1.2rem;
+  margin-top: -34px;
+  margin-bottom: 10%
 }
 
 .profiles .col-6:nth-child(odd) {
@@ -587,49 +652,8 @@ header .overlay {
   padding-bottom: 100px;
 }
 
-/*CART Funktion */
-.cd-cart__trigger,
-.cd-cart__content {
-  position: fixed;
-  bottom: 20px;
-  right: 5%;
-  transition: transform .2s;
-}
-
-.cd-cart--empty .cd-cart__trigger,
-.cd-cart--empty .cd-cart__content {
-  // hide cart
-  transform: translateY(150px);
-}
-
-.cd-cart__layout {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  overflow: hidden;
-  height: 72px;
-  width: 72px;
-  border-radius: var(--radius);
-  transition: height .4s .1s, width .4s .1s, box-shadow .3s;
-  transition-timing-function: cubic-bezier(.67, .17, .32, .95);
-  background: var(--cd-color-3);
-  box-shadow: 0 4px 30px rgba(#000, .17);
-}
-
-.cd-cart--open .cd-cart__layout {
-  height: 100%;
-  width: 100%;
-  transition-delay: 0s;
-}
-
-.cd-cart__product--deleted {
-  // this class is added to an item when it is removed form the cart
-  position: absolute;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  animation: cd-item-slide-out .3s forwards;
+.antal {
+  padding: 20%;
 }
 
 @keyframes cd-item-slide-out {
@@ -644,7 +668,15 @@ header .overlay {
   }
 }
 
+#carouselExampleControls a {
+  display: none;
+}
+
 @media only screen and (min-width: 576px) {
+  #carouselExampleControls a {
+    display: block;
+  }
+
   p {
     font-size: 1.2rem;
   }
@@ -660,11 +692,33 @@ header .overlay {
   .logo-spacer {
     display: none;
   }
+
+  .btn, .btn img {
+    height: 100%;
+  }
+
+  .showcase img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pris {
+    width: 350px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  #carouselExampleControls a {
+    display: block;
+  }
+
   p {
     font-size: 1.3rem;
+  }
+
+  .showcase img {
+    width: 100%;
+    height: 100%;
   }
 
   .footer .col-12 {
@@ -730,9 +784,18 @@ header .overlay {
 }
 
 @media only screen and (min-width: 992px) {
+  #carouselExampleControls a {
+    display: block;
+  }
+
   .dropdown-menu {
     background-color: #87b6c6;
     border-top: 0;
+  }
+
+  .add {
+    width: 300px;
+    height: 80px;
   }
 
   .kolonne {
@@ -795,6 +858,10 @@ header .overlay {
 }
 
 @media only screen and (min-width: 1200px) {
+  #carouselExampleControls a {
+    display: block;
+  }
+
   .banner__item.banner__item--last {
     margin-top: -75px;
   }
@@ -854,6 +921,10 @@ header .overlay {
 }
 
 @media only screen and (min-width: 2000px) {
+  #carouselExampleControls a {
+    display: block;
+  }
+
   .banner__item__text h2 {
     font-size: 4rem;
     color: #E1E2DC !important;

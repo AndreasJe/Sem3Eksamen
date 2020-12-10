@@ -90,12 +90,18 @@
 
 
   <main class="content">
-
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Product page</li>
+      </ol>
+    </nav>
 
     <div class="container-fluid produkt">
       <div class="row">
 
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 d-flex align-items-center">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -121,42 +127,79 @@
         </div>
         <div class="col-12 col-lg-6">
 
-          <h2 class="p-5 pb-0">Produkt 1</h2>
-          <p class="p-2">This ducky will help your child recognise anything yellow. Sed erat viverra, mollis enim sed, maximus purus. Phasellus ac quam risus. Aliquam molestie, sem tristique tempor bibendum, velit arcu pulvinar dui, eu malesuada arcu
-            elit id
-            nulla. Nulla convallis mattis arcu in cursus. Suspendisse tristique commodo venenatis.</p>
-          <div class="container d-flex flex-row p-3">
+          <div class="container">
 
-            <h3>Size:</h3> <em>13 cm x 7 cm</em>
+
+            <h2 class="p-5 pb-0">Produkt 1</h2>
+            <p class="p-2">This ducky will help your child recognise anything yellow. Sed erat viverra, mollis enim sed, maximus purus. Phasellus ac quam risus. Aliquam molestie, sem tristique tempor bibendum, velit arcu pulvinar dui, eu malesuada
+              arcu
+              elit id
+              nulla. Nulla convallis mattis arcu in cursus. Suspendisse tristique commodo venenatis.</p>
+            <div class="container d-flex flex-row p-3">
+
+              <h3>Size:</h3>
+              <h3 style="margin-left:20px;">13 cm x 7 cm</h3>
+            </div>
+
+            <ul class="p-3">
+              <li>Includes aquarelle paint to finish yourself.</li>
+              <li>Reusable box included.</li>
+              <li>Repurposed wood from your local environment.</li>
+            </ul>
+
           </div>
 
-          <ul class="p-3">
-            <li>Includes aquarelle paint to finish yourself.</li>
-            <li>Reusable box included.</li>
-            <li>Repurposed wood from your local environment.</li>
-          </ul>
+          <div class="row">
 
-          <div class="container d-flex flex-row p-3">
-            <div class="pris">
-              <div class="container d-flex flex-row">
+            <div class="col-12 col-md-6 ">
 
-                <h2>15 DKK</h2> <em>Vat included</em>
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="row pris pt-3 pb-5 p-2">
+                    <div class="col col-sm-12 col-md-6 ">
+                      <h2>15 DKK</h2>
+
+                    </div>
+                    <div class="col col-sm-12 col-md-6 d-flex ">
+                      <em class="align-self-center">Vat included</em>
+
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="nmb">
-              <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-bag-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M5.5 3.5a2.5 2.5 0 0 1 5 0V4h-5v-.5zm6 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />
-              </svg>
 
-            </div><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-bag-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M5.5 3.5a2.5 2.5 0 0 1 5 0V4h-5v-.5zm6 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />
-            </svg>
+            <div class="col-12 col-md-6 ">
 
-            <div class="add">
+              <div class="col-sm-12 col-md-12">
+                <div class="container">
+                  <div class="row antal pt-3 pb-5">
+                    <div class="col-2 p-2">
+                      <h2>-</h2>
+                    </div>
+                    <div class=" col-8 p-2">
+                      <h2 style="text-decoration:underline;">2</h2>
+                    </div>
+                    <div class=" col-2 p-2">
+                      <h2>+</h2>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </div>
 
 
+
+            <div class="col-12 col-lg-4 ">
+
+              <div class=" border add container p-3">
+                <a href="cart.html">
+                  <h1>ADD TO CART</h1>
+                </a>
+              </div>
+            </div>
           </div>
 
 
@@ -186,7 +229,7 @@
 
 
         </div>
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-8 d-flex align-items-center">
           <div id="instruktioner" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -218,10 +261,10 @@
 
       </div>
 
-      <div class="container-fluid">
-        <h2 class="p-4">DOWNLOAD INSTRUCTIONS</h2>
-        <a href="#">
-          <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-cloud-download mx-auto d-flex" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <div class="container-fluid pt-5">
+        <h2 class="p-5">DOWNLOAD INSTRUCTIONS</h2>
+        <a href="www.dr.dk">
+          <svg style="margin-top:-40px;" width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-cloud-download mx-auto d-flex" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
               d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z" />
             <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z" />
@@ -233,9 +276,9 @@
     <div class="container-fluid kampagne">
 
       <h1>IS IT COLLECTING DUST?</h1>
-      <h2>Return your old toys <br> for a 50% off your next purchase</h2>
+      <h2>Return your old toys for a 50% off your next purchase</h2>
 
-      <a href="campaing.html">Read More</a>
+      <a href="campaign.html">Read More</a>
     </div>
 
 
