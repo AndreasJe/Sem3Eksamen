@@ -70,7 +70,7 @@ a {
   font-family: "ff-providence-sans-web-pro";
   text-decoration: none;
   color: inherit;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 a:hover {
@@ -78,6 +78,10 @@ a:hover {
   opacity: 1;
   text-decoration: none;
   cursor: pointer;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
 }
 
 h3 {
@@ -90,17 +94,18 @@ h3 {
 body,
 html {
   scroll-behavior: smooth;
-  color: #E1E2DC;
+  color: #F2A885;
   margin: 0;
   padding: 0;
-  background-color: #afc9d2 !important;
+  background-color: #FCF1EC !important;
 }
 
 nav {
   min-height: 2vh;
   line-height: 1.5;
   padding-bottom: 1vh;
-  background-color: #87B6C6 !important;
+  background-color: #F6C3AB !important;
+  background-color: #F6C3AB !important;
   z-index: 100000000;
 }
 
@@ -163,7 +168,7 @@ nav {
   width: 100vw;
   padding: 0;
   margin: 0;
-  background-color: #AFC9D2;
+  background-color: #FCF1EC;
   ;
 }
 
@@ -216,7 +221,7 @@ nav {
   margin: 0;
   padding: 0;
   height: 9vh;
-  background-color: #AFC9D2;
+  background-color: #FCF1EC;
   position: relative;
 }
 
@@ -258,11 +263,11 @@ nav {
   font-size: 1.2rem;
   padding-left: 20px;
   font-family: 'ff-providence-sans-web-pro';
-  color: white;
+  color: #F2A885;
 }
 
 .breadcrumb .active {
-  color: white;
+  color: #F2A885 !important;
 }
 
 main nav {
@@ -272,7 +277,7 @@ main nav {
 header {
   position: relative;
   background-color: black;
-  height: 84vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -315,13 +320,12 @@ header .overlay {
   margin: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #E1E2DC;
-  color: #737B51;
+  background-color: #FCF1EC;
+  color: #F2A885;
 }
 
 .kolonne:nth-child(even) {
-  background-color: #737B51;
-  color: #E1E2DC;
+  color: #F2A885;
 }
 
 .kolonne img {
@@ -343,26 +347,6 @@ header .overlay {
   object-fit: contain;
   width: 100%;
   height: 100%;
-}
-
-.staff-intro {
-  background-color: #8AA1AF;
-}
-
-.rounded {
-  border-radius: 6.25rem !important;
-}
-
-.profiles img {
-  height: 100px;
-  width: 100px;
-}
-
-.profiles .col-6 {
-  background-color: #8AA1AF;
-  padding: 7%;
-  height: 100%;
-  color: #fff;
 }
 
 .myBtnContainer .col-12 {
@@ -391,7 +375,7 @@ header .overlay {
   bottom: 5%;
   left: 10%;
   right: 10%;
-  color: #fff;
+  color: #F2A885;
 }
 
 .showcase h3 {
@@ -415,6 +399,11 @@ header .overlay {
   padding: 10%;
   margin-top: 3vh;
   text-align: center;
+}
+
+.showcase {
+  background-color: #F6C3AB;
+  color: white !important;
 }
 
 .show {
@@ -442,16 +431,18 @@ header .overlay {
   width: 80%;
   border-top: none;
   padding-top: 1.5rem;
-  color: #fff;
+  color: #F2A885 !important;
   text-decoration: underline;
 }
 
 .add-cart {
   padding: 0.5rem;
+  color: white !important;
 }
 
 .product-link {
   padding: 0.5rem;
+  color: white !important;
 }
 
 #products {
@@ -465,11 +456,15 @@ header .overlay {
 .go-back {
   padding: 2rem;
   margin-top: 5vh;
-  border: 5px solid white;
+  border: 5px solid #F6C3AB;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #F2A885;
   cursor: pointer;
+}
+
+.border {
+  border: 5px solid #f6c3ab !important;
 }
 
 .img-container {
@@ -490,6 +485,13 @@ header .overlay {
   margin-bottom: 10vh;
 }
 
+.instruktioner {
+  background-color: #F6C3AB;
+  color: white;
+  width: 100%;
+  padding: 15%;
+}
+
 .produkt h2 {
   font-size: 2.6rem;
   font-family: 'ff-providence-sans-web-pro';
@@ -505,19 +507,44 @@ header .overlay {
 }
 
 .kampagne a {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-left: 20%;
   margin-top: 20px;
 }
 
 .kampagne h2 {
   font-size: 1.2rem;
-  margin-top: -34px;
+  margin-top: -14px;
   margin-bottom: 10%
 }
 
+.staff-intro {
+  background-color: #FCF1EC;
+}
+
+.rounded {
+  border-radius: 6.25rem !important;
+}
+
+.profiles img {
+  height: 100px;
+  width: 100px;
+}
+
+.profiles .col-6 {
+  background-color: #F6C3AB;
+  padding: 7%;
+  height: 100%;
+}
+
 .profiles .col-6:nth-child(odd) {
-  background-color: #E1E2DC;
+  background-color: #FCF1EC;
+  color: #F2A885 !important;
+}
+
+.profiles .col-6:nth-child(even) {
+  background-color: #F6C3AB;
+  color: #FCF1EC !important;
 }
 
 .profiles h3,
@@ -528,22 +555,23 @@ header .overlay {
   text-align: center;
 }
 
-.prof-bg1 {
-  background-color: #D5D6D0 !important;
+#prof-bg2 {
+  background-color: #FCF1EC !important;
+  color: #F2A885 !important;
 }
 
-.prof-bg2 {
-  background-color: #e1e2dc !important;
+#prof-bg1 {
+  background-color: #F6C3AB !important;
+  color: white !important;
 }
 
-.contact {
-  background-color: #52768E;
-}
+.contact {}
 
 .footer {
   text-align: center;
   width: 100%;
-  background-color: #8AA1AF;
+  color: white;
+  background-color: #F6C3AB;
 }
 
 .footer .col-12 {
@@ -616,7 +644,7 @@ header .overlay {
 
 .banner__item__text h2 {
   font-size: 2.8rem;
-  color: #E1E2DC !important;
+  color: #F2A885;
   font-weight: 700;
   line-height: 46px;
   letter-spacing: -2px;
@@ -625,7 +653,7 @@ header .overlay {
 
 .banner__item__text a {
   display: inline-block;
-  color: #E1E2DC !important;
+  color: #F2A885 !important;
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -640,7 +668,7 @@ header .overlay {
   bottom: 0;
   width: 100%;
   height: 2px;
-  color: #E1E2DC !important;
+  color: #F2A885 !important;
   content: "";
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
@@ -744,18 +772,6 @@ header .overlay {
     height: 50%;
   }
 
-  .profiles .col-6 {
-    padding: 5%;
-  }
-
-  .prof-bg1 {
-    background-color: #e1e2dc !important;
-  }
-
-  .prof-bg2 {
-    background-color: #D5D6D0 !important;
-  }
-
   .logo-spacer {
     display: none;
   }
@@ -793,7 +809,7 @@ header .overlay {
   }
 
   .dropdown-menu {
-    background-color: #87b6c6;
+    background-color: #F6C3AB;
     border-top: 0;
   }
 
@@ -977,7 +993,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://i.vimeocdn.com/video/795032897.webp?mw=1700&mh=896') black no-repeat center center scroll;
+    background: url('assets/subsitute.png') black no-repeat center center scroll;
   }
 
   header video {
