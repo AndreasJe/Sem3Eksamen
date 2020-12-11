@@ -165,7 +165,7 @@ nav {
 }
 
 .content {
-  width: 100vw;
+  width: 100%;
   padding: 0;
   margin: 0;
   background-color: #FCF1EC;
@@ -309,9 +309,22 @@ header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: hsl(19deg 73% 96% / 46%);
   opacity: 0.5;
   z-index: 1;
+}
+
+.display-3 {
+  font-size: calc(3.525rem + 3.3vw);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -6px;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -30px;
 }
 
 .kolonne {
@@ -372,7 +385,7 @@ header .overlay {
   position: absolute;
   user-select: none;
   font-size: 2rem;
-  bottom: 5%;
+  bottom: 0%;
   left: 10%;
   right: 10%;
   color: #F2A885;
@@ -447,24 +460,117 @@ header .overlay {
 
 #products {
   padding: 5vw;
+  display: none;
 }
 
 #categories {
   padding: 5vw;
 }
 
+#categories p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.payment {
+  padding: 10%;
+}
+
+.form-control {
+  background-color: #f6c3ab;
+  color: white;
+}
+
+.card {
+  background-color: inherit !important;
+}
+
+::placeholder {
+  color: white !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+.list-group-item {
+  background-color: #f6c3ab;
+  color: white !important;
+}
+
+select {
+  background-color: #f6c3ab;
+  color: white !important;
+}
+
+#trump .text-muted {
+  color: white !important;
+}
+
+.payment h4 {
+  color: #F2A885 !important
+}
+
+input:checkbox {
+  background-color: #f6c3ab;
+  color: white !important;
+}
+
+.btn-secondary {
+  color: #F2A885 !important;
+  font-weight: 600;
+  background-color: #FCF1EC;
+  border-color: #f6c3ab;
+  ;
+}
+
+.btn-primary {
+  background-color: #F2A885;
+  border-color: #fff;
+}
+
+.payment .text-muted {
+  color: #F2A885 !important;
+  opacity: 0.8;
+}
+
+.text-success {
+  color: #68c198 !important;
+}
+
+.list-group-item small {
+  color: white !important;
+}
+
+.bg-lighter {
+  background-color: rgb(246 195 171 / 59%);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white !important;
+}
+
 .go-back {
   padding: 2rem;
   margin-top: 5vh;
-  border: 5px solid #F6C3AB;
+  border: 5px solid #fff;
   width: 100%;
   text-align: center;
-  color: #F2A885;
+  color: #fff;
   cursor: pointer;
 }
 
 .border {
   border: 5px solid #f6c3ab !important;
+}
+
+.intro {
+  padding-top: 10% !important;
+  padding-bottom: 10% !important;
 }
 
 .img-container {
@@ -555,17 +661,27 @@ header .overlay {
   text-align: center;
 }
 
+#prof-bg1 {
+  background-color: #F6C3AB;
+  color: #FCF1EC !important;
+}
+
 #prof-bg2 {
-  background-color: #FCF1EC !important;
+  background-color: #FCF1EC;
   color: #F2A885 !important;
 }
 
-#prof-bg1 {
-  background-color: #F6C3AB !important;
-  color: white !important;
+.contact h3 {
+  text-align: center;
+  padding: 5rem;
+  padding-bottom: 5rem;
+  font-size: 2rem;
 }
 
-.contact {}
+.contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
 .footer {
   text-align: center;
@@ -588,6 +704,125 @@ header .overlay {
 
 .logo-spacer {
   display: none;
+}
+
+.chevron {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.scroll-arrow {
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  animation: arrow-wave 1s infinite;
+  animation-direction: alternate;
+
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      animation-delay: $animation-delay*$i;
+    }
+  }
+}
+
+.swing-in-bottom-fwd {
+  -webkit-animation: swing-in-bottom-fwd 1s cubic-bezier(.175, .885, .32, 1.275) both;
+  animation: swing-in-bottom-fwd 1s cubic-bezier(.175, .885, .32, 1.275) both
+}
+
+.swing-in-bottom-fwd-rvs {
+  -webkit-animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) reverse both;
+  animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) reverse both;
+}
+
+@keyframes arrow-wave {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1
+  }
+}
+
+@keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1
+  }
+}
+
+@keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1
+  }
 }
 
 /*---------------------
@@ -737,6 +972,16 @@ header .overlay {
   .go-back {
     width: 50%;
   }
+
+  #prof-bg2 {
+    background-color: #F6C3AB;
+    color: #FCF1EC !important;
+  }
+
+  #prof-bg1 {
+    background-color: #FCF1EC;
+    color: #F2A885 !important;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -755,6 +1000,8 @@ header .overlay {
 
   .footer .col-12 {
     padding: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     margin: 0;
   }
 
@@ -845,7 +1092,6 @@ header .overlay {
 
   .banner__item__text h2 {
     font-size: 2.8rem;
-    color: #E1E2DC !important;
     font-weight: 700;
     line-height: 46px;
     letter-spacing: -6px;
@@ -895,7 +1141,7 @@ header .overlay {
   }
 
   .kolonne {
-    height: 100vh;
+    height: 75vh;
   }
 
   .kolonne img {
@@ -908,7 +1154,6 @@ header .overlay {
 
   .banner__item__text h2 {
     font-size: 2.8rem;
-    color: #E1E2DC !important;
     font-weight: 700;
     line-height: 46px;
     letter-spacing: -6px;
@@ -931,6 +1176,10 @@ header .overlay {
     margin-top: -70px;
   }
 
+  .banner__item.banner__item--last .banner__item__text {
+    top: 19px;
+  }
+
   .banner__item.banner__item--middle {
     margin-top: -275px;
   }
@@ -946,6 +1195,25 @@ header .overlay {
   .go-back {
     width: 30%;
   }
+
+  #categories p {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .profiles {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .profiles em {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .profiles p {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (min-width: 2000px) {
@@ -955,7 +1223,6 @@ header .overlay {
 
   .banner__item__text h2 {
     font-size: 4rem;
-    color: #E1E2DC !important;
     font-weight: 700;
     line-height: 46px;
     letter-spacing: -9px;
@@ -989,11 +1256,35 @@ header .overlay {
   .go-back {
     width: 25%;
   }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h3 {
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 1.9rem;
+  }
+
+  .kolonne p {
+    width: 50%;
+    margin: auto;
+  }
+
+  .kolonne em {
+    width: 25%;
+    margin: auto;
+    display: block;
+  }
 }
 
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url('assets/subsitute.png') black no-repeat center center scroll;
+    kn
   }
 
   header video {

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SMÅ PODER - Thanks for your purchase!">
+  <meta name="keywords" content="kids, toys, sustainable, sustainability, wood, recycle, local, healthy, learning, play, fun">
+  <meta name="author" content="Andreas Jensen & Adrian Montiveros">
+  <title>Receipt</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+
+  <style media="screen">
+    header {
+      display: none;
+    }
+
+    /* -------------------------------------
+    GLOBAL
+    A very basic CSS reset
+------------------------------------- */
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: none;
+      width: 100% !important;
+      height: 100%;
+      line-height: 1.6;
+    }
+
+    /* Let's make sure all tables have defaults */
+    table td {
+      vertical-align: top;
+    }
+
+    /* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+
+    .body-wrap {
+      width: 100%;
+    }
+
+    .container {
+      display: block !important;
+      max-width: 600px !important;
+      margin: 0 auto !important;
+      /* makes it centered */
+      clear: both !important;
+    }
+
+    .content2 {
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+      padding: 20px;
+    }
+
+    /* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+
+    .content-wrap {
+      padding: 20px;
+    }
+
+    .content-block {
+      padding: 0 0 20px;
+    }
+
+    .header {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      width: 100%;
+      clear: both;
+      padding: 20px;
+    }
+
+    /* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+    h1,
+    h2,
+    h3 {
+      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      color: #F2A885;
+      margin: 40px 0 0;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-family: 'ff-providence-sans-web-pro';
+      font-weight: 500;
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-family: 'ff-providence-sans-web-pro';
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    p,
+    ul,
+    ol {
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    p li,
+    ul li,
+    ol li {
+      margin-left: 5px;
+      list-style-position: inside;
+    }
+
+    /* -------------------------------------
+    LINKS & BUTTONS
+------------------------------------- */
+    a {
+      font-size: 1.1rem;
+      color: #F2A885;
+      text-decoration: underline;
+    }
+
+    .btn-primary {
+      text-decoration: none;
+      color: #F2A885;
+      background-color: #1ab394;
+      border: solid #1ab394;
+      border-width: 5px 10px;
+      line-height: 2;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 5px;
+      text-transform: capitalize;
+    }
+
+    /* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+    .last {
+      margin-bottom: 0;
+    }
+
+    .first {
+      margin-top: 0;
+    }
+
+    .aligncenter {
+      text-align: center;
+    }
+
+    .alignright {
+      text-align: right;
+    }
+
+    .alignleft {
+      text-align: left;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    /* -------------------------------------
+    ALERTS
+    Change the class depending on warning email, good email or bad email
+------------------------------------- */
+    .alert {
+      font-size: 16px;
+      color: #F2A885;
+      font-weight: 500;
+      padding: 20px;
+      text-align: center;
+      border-radius: 3px 3px 0 0;
+    }
+
+    .alert a {
+      color: #F2A885;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    /* -------------------------------------
+    INVOICE
+    Styles for the billing table
+------------------------------------- */
+    .invoice {
+      margin: 40px auto;
+      text-align: left;
+      width: 80%;
+    }
+
+    .invoice td {
+      padding: 5px 0;
+    }
+
+    .invoice .invoice-items {
+      width: 100%;
+    }
+
+    .invoice .invoice-items td {
+      border-top: #eee 1px solid;
+    }
+
+    .invoice .invoice-items .total td {
+      border-top: 2px solid #F6C3AB;
+      border-bottom: 2px solid #F6C3AB;
+      font-weight: 700;
+    }
+
+    .bottombitch {
+      padding-top: 10%;
+    }
+
+    /* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+    @media only screen and (max-width: 640px) {
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 600 !important;
+        margin: 20px 0 5px !important;
+      }
+
+      h1 {
+        font-size: 22px !important;
+      }
+
+      h2 {
+        font-size: 18px !important;
+      }
+
+      h3 {
+        font-size: 16px !important;
+      }
+
+      .container {
+        width: 100% !important;
+      }
+
+      .content,
+      .content-wrap {
+        padding: 10px !important;
+      }
+
+      .invoice {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="assets/pige.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3 remtxt">Økologisk Legetøj</h1>
+          <h3 class="lead mb-0 remtxt">Altid det bedste til de små poder</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="sticky-top container-fluid nav-container">
+
+    <div class="container-fluid row topbar">
+      <div class="col-6 align-self-end logotekst"><a href="index.html">
+          <img loading="lazy" src="assets/logotekst.svg" alt="brand navn"></a>
+        <img loading="lazy" src="assets/lillesvane.svg" alt="svane1" class="floating" id="svane1">
+        <img loading="lazy" src="assets/storsvane.svg" alt="svane2" class="floating" id="svane2">
+      </div>
+      <div class="sticky-top icons col-6 align-self-center d-flex justify-content-end">
+        <a href="#">
+          <img loading="lazy" src="assets/ikoner/heart.svg" alt="Favorite">
+
+        </a>
+        <a href="#">
+          <img loading="lazy" src="assets/ikoner/search.svg" alt="Search">
+
+        </a>
+        <a href="cart.html">
+          <img loading="lazy" src="assets/ikoner/cart.svg" alt="Cart">
+
+        </a>
+      </div>
+
+    </div>
+
+    <nav class=" navbar navbar-expand-lg navbar-dark d-flex align-content-md-end justify-content-md-end" aria-label="Tenth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse align-content-md-center justify-content-md-end collapse" id="navbarsExample08" style="">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item dropdown  ">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-expanded="false">Green production</a>
+              <ul class="dropdown-menu " aria-labelledby="dropdown08">
+                <li><a class="dropdown-item" href="nature.html">We care for nature</a></li>
+                <li><a class="dropdown-item" href="production.html">Sustainable production</a></li>
+                <li><a class="dropdown-item" href="shipping.html">Personal packaging</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <main class="content">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+        <li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Receipt</li>
+      </ol>
+    </nav>
+
+
+    <table class="body-wrap">
+      <tbody>
+        <tr>
+          <td></td>
+          <td class="container" width="600">
+            <div class="content2">
+              <table class="main" width="100%" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="content-wrap aligncenter">
+                      <table width="100%" cellpadding="0" cellspacing="0">
+                        <tbody>
+                          <tr>
+                            <td class="content-block">
+                              <h2>Thank you for your purchase!</h2>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="content-block">
+                              <table class="invoice">
+                                <tbody>
+                                  <tr>
+                                    <td>Anna Smith<br>Invoice #12345<br>June 01 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <table class="invoice-items" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                          <tr>
+                                            <td>Ducky the Duck</td>
+                                            <td class="alignright">15.00 DKK</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Flubbert</td>
+                                            <td class="alignright">50.00 DKK</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Airhog</td>
+                                            <td class="alignright">100 DKK</td>
+                                          </tr>
+                                          <td>Promocode</td>
+                                          <td class="alignright">-40 DKK</td>
+                                  </tr>
+                                  <tr class="total">
+                                    <td class="alignright" width="80%">Total</td>
+                                    <td class="alignright">125 DKK</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="content-block">
+                      <a href="#">View in browser</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="content-block">
+                      Company Inc. 123 Van Ness, San Francisco 94102
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="bottombitch">
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td class="aligncenter content-block" style="
+    color: #F2A885;
+">Questions? Email <a href="mailto:">support@company.inc</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+    <div class="container-fluid footer">
+
+      <div class="row ">
+        <div class="col-12 col-md-4 col-lg-4 align-self-start">
+          <p>Webshop</p>
+          <p>Nye Produkter</p>
+          <p>Kampagne</p>
+
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 align-self-center">
+          <p>Kommunevej 12</p>
+          <p>2200 København</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 align-self-start">
+          <p>Privatpolitik</p>
+          <p>Handelsbetingelser</p>
+          <p>Cookies og data</p>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+  <script type="text/javascript">
+    const boxes = gsap.utils.toArray('.box');
+
+    // Set things up
+    gsap.set(boxes, {
+      autoAlpha: 0,
+      y: 50
+    });
+
+    boxes.forEach((box, i) => {
+      // Set up your animation
+      const anim = gsap.to(box, {
+        duration: 1,
+        autoAlpha: 1,
+        y: 0,
+        paused: true
+      });
+
+      // Use callbacks to control the state of the animation
+      ScrollTrigger.create({
+        trigger: box,
+        end: "bottom bottom",
+        once: true,
+        onEnter: self => {
+          // If it's scrolled past, set the state
+          // If it's scrolled to, play it
+          self.progress === 1 ? anim.progress(1) : anim.play()
+        }
+      });
+    });
+
+    <
+    /body>
+
+    <
+    /html>
