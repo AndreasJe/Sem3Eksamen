@@ -1,19 +1,10 @@
-@import url("https://p.typekit.net/p.css?s=1&k=zia3kjo&ht=tk&f=4619.4620&a=31421516&app=typekit&e=css");
-
 @font-face {
   font-family: "ff-providence-sans-web-pro";
   src: url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
   font-display: auto;
   font-style: normal;
   font-weight: 400;
-}
-
-@font-face {
-  font-family: "ccmeanwhile";
-  src: url("https://use.typekit.net/af/f110aa/00000000000000003b9b47fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/f110aa/00000000000000003b9b47fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/f110aa/00000000000000003b9b47fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -22,6 +13,7 @@
   font-display: auto;
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
 }
 
 .tk-ff-providence-sans-web-pro {
