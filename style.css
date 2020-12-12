@@ -309,14 +309,14 @@ header .overlay {
 .display-3 {
   font-size: calc(3.525rem + 3.3vw);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 0.9;
   letter-spacing: -6px;
 }
 
 .lead {
   font-size: 1.5rem;
   font-weight: 500;
-  margin-top: -30px;
+  margin-top: 30px;
 }
 
 .kolonne {
@@ -1206,11 +1206,21 @@ input:checkbox {
   .profiles p {
     font-size: 1.1rem;
   }
+
+  .showcase .row {
+    text-align: center;
+    padding: 10%;
+  }
 }
 
 @media only screen and (min-width: 2000px) {
   #carouselExampleControls a {
     display: block;
+  }
+
+  .showcase .row .col-12 {
+    text-align: center;
+    padding: 10%;
   }
 
   .banner__item__text h2 {
