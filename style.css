@@ -1003,7 +1003,7 @@ input:checkbox {
   }
 
   .kolonne {
-    height: 75vh;
+    height: 60vh;
     padding: 5vw;
   }
 
@@ -1058,7 +1058,8 @@ input:checkbox {
   }
 
   .kolonne {
-    height: 100vh;
+    height: 75vh;
+    margin-bottom: 5vh;
   }
 
   .topbar .logotekst img {
