@@ -61,6 +61,7 @@ h2 {
 a {
   font-family: "ff-providence-sans-web-pro";
   text-decoration: none;
+  cursor: pointer;
   color: inherit;
   opacity: 1;
 }
@@ -606,7 +607,7 @@ input:checkbox {
 
 .kampagne a {
   font-size: 1.3rem;
-  margin-left: 20%;
+  margin-left: 60%;
   margin-top: 20px;
 }
 
@@ -665,8 +666,8 @@ input:checkbox {
 
 .contact h3 {
   text-align: center;
-  padding: 5rem;
-  padding-bottom: 5rem;
+  padding: 3rem;
+  padding-bottom: 0rem;
   font-size: 2rem;
 }
 
@@ -1117,6 +1118,11 @@ input:checkbox {
 
   .go-back {
     width: 40%;
+  }
+
+  .contact {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
