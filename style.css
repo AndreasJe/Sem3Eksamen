@@ -1,7 +1,6 @@
 @font-face {
   font-family: "ff-providence-sans-web-pro";
   src: url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/13de8a/00000000000000003b9b073e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-  font-display: auto;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -10,7 +9,6 @@
 @font-face {
   font-family: "ode";
   src: url("https://use.typekit.net/af/5705c4/00000000000000003b9b3c64/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/5705c4/00000000000000003b9b3c64/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/5705c4/00000000000000003b9b3c64/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
-  font-display: auto;
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -312,12 +310,14 @@ header .overlay {
   font-weight: 600;
   line-height: 0.9;
   letter-spacing: -6px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.57);
 }
 
 .lead {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 30px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.57);
 }
 
 .kolonne {
@@ -877,6 +877,7 @@ input:checkbox {
   line-height: 46px;
   letter-spacing: -2px;
   margin-bottom: -6px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.57);
 }
 
 .banner__item__text a {
@@ -888,6 +889,7 @@ input:checkbox {
   text-transform: uppercase;
   padding: 3px 0;
   position: relative;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.57);
 }
 
 .banner__item__text a:after {
@@ -901,6 +903,7 @@ input:checkbox {
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.57);
 }
 
 .spad {
@@ -954,8 +957,8 @@ input:checkbox {
   }
 
   .showcase img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
   }
 
   .pris {
@@ -987,8 +990,8 @@ input:checkbox {
   }
 
   .showcase img {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
   }
 
   .footer .col-12 {
