@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  opacity: 1;
+}
+
 .tk-ff-providence-sans-web-pro {
   font-family: "ff-providence-sans-web-pro", sans-serif;
 }
@@ -44,6 +50,7 @@ h1 {
   font-size: 2.5rem;
   padding: 2%;
   text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.57);
 }
 
 h2 {
@@ -54,6 +61,7 @@ h2 {
   font-size: 1.6rem;
   padding: 2%;
   text-align: center;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.57);
 }
 
 a {
@@ -62,6 +70,7 @@ a {
   cursor: pointer;
   color: inherit;
   opacity: 1;
+  padding: 0.2rem;
 }
 
 a:hover {
@@ -80,6 +89,7 @@ h3 {
   font-weight: 700;
   letter-spacing: -2px;
   font-size: 2rem;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.57);
 }
 
 body,
@@ -240,6 +250,15 @@ nav {
 
 .dropdown-menu a {
   color: white;
+  background-color: #F6C3AB !important;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.dropdown-menu a :active {
+  background-color: #F6C3AB !important;
+  color: white;
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -267,7 +286,7 @@ main nav {
 
 header {
   position: relative;
-  background-color: black;
+  background-color: #FCF1EC;
   height: 100vh;
   min-height: 25rem;
   width: 100%;
@@ -626,8 +645,8 @@ input:checkbox {
 }
 
 .profiles img {
-  height: 100px;
-  width: 100px;
+  height: 135px;
+  width: 135px;
 }
 
 .profiles .col-6 {
@@ -980,7 +999,17 @@ input:checkbox {
   }
 }
 
+.profiles img {
+  height: 150px;
+  width: 150px;
+}
+
 @media only screen and (min-width: 768px) {
+  .profiles img {
+    height: 170px;
+    width: 170px;
+  }
+
   #carouselExampleControls a {
     display: block;
   }
@@ -1134,6 +1163,11 @@ input:checkbox {
     display: block;
   }
 
+  .showcase img {
+    width: 100%;
+    height: 100%;
+  }
+
   .banner__item.banner__item--last {
     margin-top: -75px;
   }
@@ -1230,7 +1264,7 @@ input:checkbox {
 
   .showcase .row .col-12 {
     text-align: center;
-    padding: 10%;
+    padding: 5%;
   }
 
   .banner__item__text h2 {
