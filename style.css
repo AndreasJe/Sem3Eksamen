@@ -16,7 +16,7 @@
 
 .carousel-control-next, .carousel-control-prev {
   position: absolute;
-  top: 50%;
+  top: 0%;
   opacity: 1;
 }
 
@@ -608,6 +608,14 @@ input:checkbox {
   color: white;
   width: 100%;
   padding: 15%;
+}
+
+#instruktioner img {
+  padding: 15%;
+}
+
+#instruktioner {
+  position: relative;
 }
 
 .produkt h2 {
@@ -1233,8 +1241,8 @@ input:checkbox {
   }
 
   #categories p {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .profiles {
