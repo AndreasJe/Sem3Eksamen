@@ -2,11 +2,41 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ3NR17LQ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XZ3NR17LQ2');
+  </script>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PM62TZK');
+  </script>
+  <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=" Enjoy these sustainable toys with your child. Build and play all day, and watch your child grow">
   <meta name=" keywords" content="kids, toys, sustainable, sustainability, wood, recycle, local, healthy, learning, play, fun">
   <meta name="author" content="Andreas Jensen & Adrian Montiveros">
+  <meta name="google-site-verification" content="DMxwiXYwP0dapxNSz_BJ3HXXV73IaWHPdYmrfKIJynY" />
   <title>Product Page</title>
   <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
@@ -22,6 +52,9 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM62TZK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
 
 
@@ -107,11 +140,11 @@
                 <img loading="lazy" class="d-block w-100" src="assets/products/magnet-train/3.webp" alt="Third slide">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev fix" href="#carouselExampleControls" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next fix" href="#carouselExampleControls" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -229,7 +262,7 @@
 
         </div>
         <div id="instruktioner" class="box col-12 col-lg-8">
-          <div class="mx-auto carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls2" class="mx-auto carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img loading="lazy" class="d-block w-100" src="assets/products/magnet-train/instuct/instuct1.png" alt="First slide">
@@ -241,11 +274,11 @@
                 <img loading="lazy" class="d-block w-100" src="assets/products/magnet-train/instuct/instuct3.png" alt="Third slide">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#instruktioner" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#instruktioner" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -285,9 +318,15 @@
 
       <div class="row ">
         <div class="col-12 col-md-4 col-lg-4 align-self-start">
-          <p>Webshop</p>
-          <p>Products</p>
-          <p>Campaign</p>
+          <a href="#">
+            <p>Webshop</p>
+          </a>
+          <a href="#">
+            <p>Products</p>
+          </a>
+          <a href="#">
+            <p>Campaign</p>
+          </a>
 
         </div>
         <div class="col-12 col-md-4 col-lg-4 align-self-center">
@@ -297,9 +336,15 @@
           <i>2200 Copenhagen N</i>
         </div>
         <div class="col-12 col-md-4 col-lg-4 align-self-start">
-          <p>Privacy Policy</p>
-          <p>Terms of Service</p>
-          <p>Cookies &amp; Data</p>
+          <a href="#">
+            <p>Privacy Policy</p>
+          </a>
+          <a href="#">
+            <p>Terms of Service</p>
+          </a>
+          <a href="#">
+            <p>Cookies &amp; Data</p>
+          </a>
 
         </div>
 
@@ -342,7 +387,7 @@
         }
       });
     });
-  </script>
+  </script><!-- Global site tag (gtag.js) - Google Analytics -->
 </body>
 
 </html>

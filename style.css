@@ -20,13 +20,17 @@
   opacity: 1;
 }
 
+.fix {
+  top: 50%;
+}
+
 .tk-ff-providence-sans-web-pro {
   font-family: "ff-providence-sans-web-pro", sans-serif;
 }
 
 p {
   font-family: "ode";
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .kolonne p {
@@ -412,23 +416,32 @@ header .overlay {
 }
 
 .showcase .row {
+  MARGIN-TOP: -42PX;
   text-align: center;
 }
 
 .showcase img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  margin-top: 10%;
 }
 
 .showcase .row .col-12 {
   padding: 10%;
-  margin-top: 3vh;
   text-align: center;
 }
 
 .showcase {
   background-color: #F6C3AB;
   color: white !important;
+}
+
+.some img {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .show {
@@ -587,12 +600,11 @@ input:checkbox {
 
 .img-container {
   position: relative;
-  padding: 0;
 }
 
 .img-container h3 {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 80%;
   left: 10%;
 }
@@ -713,17 +725,6 @@ input:checkbox {
 .footer .col-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.floating {
-  animation-name: floating;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-.logo-spacer {
-  display: none;
 }
 
 .chevron {
@@ -942,27 +943,11 @@ input:checkbox {
   padding: 20%;
 }
 
-@keyframes cd-item-slide-out {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateX(80px);
-    opacity: 0;
-  }
-}
-
 #carouselExampleControls a {
   display: none;
 }
 
 @media only screen and (min-width: 576px) {
-  #carouselExampleControls a {
-    display: block;
-  }
-
   p {
     font-size: 1.2rem;
   }
@@ -1018,17 +1003,13 @@ input:checkbox {
     width: 170px;
   }
 
-  #carouselExampleControls a {
-    display: block;
-  }
-
   p {
     font-size: 1.3rem;
   }
 
   .showcase img {
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
   }
 
   .footer .col-12 {
@@ -1084,10 +1065,6 @@ input:checkbox {
 }
 
 @media only screen and (min-width: 992px) {
-  #carouselExampleControls a {
-    display: block;
-  }
-
   .dropdown-menu {
     background-color: #F6C3AB;
     border-top: 0;

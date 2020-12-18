@@ -2,6 +2,35 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ3NR17LQ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XZ3NR17LQ2');
+  </script>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PM62TZK');
+  </script>
+  <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=" Thanks for your purchase!">
@@ -99,15 +128,6 @@
     /* -------------------------------------
     TYPOGRAPHY
 ------------------------------------- */
-    h1,
-    h2,
-    h3 {
-      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-      color: #F2A885;
-      margin: 40px 0 0;
-      line-height: 1.2;
-      font-weight: 400;
-    }
 
     h1 {
       font-family: 'ff-providence-sans-web-pro';
@@ -118,6 +138,7 @@
     h2 {
       font-family: 'ff-providence-sans-web-pro';
       font-size: 3rem;
+      font-weight: 600;
     }
 
     h3 {
@@ -288,6 +309,9 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM62TZK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
 
   <div class="sticky-top container-fluid nav-container">
@@ -374,6 +398,7 @@
                           <tr>
                             <td class="content-block">
                               <h2>Thank you for your purchase!</h2>
+                              <h3>We will send it right away!</h3>
                             </td>
                           </tr>
                           <tr>
@@ -381,7 +406,7 @@
                               <table class="invoice">
                                 <tbody>
                                   <tr>
-                                    <td>Anna Smith<br>Invoice #12345<br>June 01 2015</td>
+                                    <td>Anna Smith<br>Invoice #12345<br>Dec 24 2020</td>
                                   </tr>
                                   <tr>
                                     <td>
@@ -421,7 +446,7 @@
                   </tr>
                   <tr>
                     <td class="content-block">
-                      Company Inc. 123 Van Ness, San Francisco 94102
+                      SmåPoder, Kommunevej 111, 2220 Copehagen
                     </td>
                   </tr>
                 </tbody>
@@ -436,7 +461,7 @@
           <tr>
             <td class="aligncenter content-block" style="
     color: #F2A885;
-">Questions? Email <a href="mailto:">support@company.inc</a></td>
+">Questions? Email <a href="mailto:">support@smaapoder.dk</a></td>
           </tr>
         </tbody>
       </table>
@@ -453,9 +478,15 @@
 
       <div class="row ">
         <div class="col-12 col-md-4 col-lg-4 align-self-start">
-          <p>Webshop</p>
-          <p>Products</p>
-          <p>Campaign</p>
+          <a href="#">
+            <p>Webshop</p>
+          </a>
+          <a href="#">
+            <p>Products</p>
+          </a>
+          <a href="#">
+            <p>Campaign</p>
+          </a>
 
         </div>
         <div class="col-12 col-md-4 col-lg-4 align-self-center">
@@ -465,9 +496,15 @@
           <i>2200 Copenhagen N</i>
         </div>
         <div class="col-12 col-md-4 col-lg-4 align-self-start">
-          <p>Privacy Policy</p>
-          <p>Terms of Service</p>
-          <p>Cookies &amp; Data</p>
+          <a href="#">
+            <p>Privacy Policy</p>
+          </a>
+          <a href="#">
+            <p>Terms of Service</p>
+          </a>
+          <a href="#">
+            <p>Cookies &amp; Data</p>
+          </a>
 
         </div>
 
@@ -509,9 +546,7 @@
         }
       });
     });
+  </script>
+</body>
 
-    <
-    /body>
-
-    <
-    /html>
+</html>
